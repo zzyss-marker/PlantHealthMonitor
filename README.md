@@ -31,14 +31,14 @@ PLANTHEALTHMONITOR
 
 ## 安装
 
-1. **准备环境**  
-   安装 Python 3.6+，建议使用虚拟环境：
+1. **准备环境**安装 Python 3.6+，建议使用虚拟环境：
+
    ```bash
    python -m venv venv
    source venv/bin/activate  # 激活虚拟环境
    ```
+2. **安装依赖库**
 
-2. **安装依赖库**  
    ```bash
    pip install -r requirements.txt
    ```
@@ -46,21 +46,21 @@ PLANTHEALTHMONITOR
 ## 使用
 
 1. **训练模型**
-   将数据集放入 `data/PlantVillage/` 目录下，然后运行：
+   将数据集放入 `dataset/`目录下，然后运行：
+
    ```bash
    python src/train.py
    ```
-
 2. **推理**
 
-   - **Windows**  
-     确保PC连接摄像头并运行：
+   - **Windows**确保PC连接摄像头并运行：
+
      ```bash
      python src/inference_windows.py
      ```
-   
-   - **树莓派**  
+   - **树莓派**
      确保树莓派连接摄像头、用gpio口喇叭模块并运行：
+
      ```bash
      python3 src/inference_raspberry_pi.py
      ```
