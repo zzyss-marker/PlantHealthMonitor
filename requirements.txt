@@ -1,0 +1,15 @@
+torch
+torchvision
+numpy
+opencv-python
+Pillow
+tqdm
+scikit-learn
+
+# Only install this on Windows
+; sys_platform == 'win32'
+winsound==0.0.1
+
+# Only install this on Raspberry Pi
+; sys_platform == 'linux' and platform_machine == 'arm'
+RPi.GPIO
