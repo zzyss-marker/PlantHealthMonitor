@@ -11,11 +11,12 @@ PLANTHEALTHMONITOR
 ├── dataset
 │   └── introduction.md
 ├── models
-│   └── best_model.pth
+│   ├── best_model.pth
+│   └── finetuning_model.pth
 ├── src
 │   ├── inference
 │   │   ├── raspberry_pi
-│   │   │   └── inference_raspberry_pi.py
+│   │   │   └─inference_raspberry_pi.py
 │   │   └── windows
 │   │       └── inference_windows.py
 │   ├── training

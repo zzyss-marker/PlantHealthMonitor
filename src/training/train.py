@@ -31,14 +31,14 @@ class Config:
     """Configuration parameters for the model training."""
     img_height: int = 128
     img_width: int = 128
-    batch_size: int = 32
+    batch_size: int = 64
     epochs: int = 50
     learning_rate: float = 1e-4
     dataset_path: str = 'dataset'  
     model_save_path: str = 'best_model.pth'
     patience: int = 10
     fine_tune_epochs: int = 20
-    num_workers: int = 4  # Set to 0 for debugging
+    num_workers: int = 8  # Set to 0 for debugging
     device: str = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 
