@@ -32,7 +32,7 @@ PLANTHEALTHMONITOR
 
 ## 安装
 
-1. **准备环境**安装 Python 3.6+，建议使用虚拟环境：
+1. **准备环境**安装 Python 3.6+（使用了3.7及以上的dataclass方法，现建议安装3.7以上版本python），建议使用虚拟环境（如在树莓派上安装环境不要破坏原系统python依赖！！！）：
 
    ```bash
    python -m venv venv
@@ -65,6 +65,10 @@ PLANTHEALTHMONITOR
      ```bash
      python3 src/inference_raspberry_pi.py
      ```
+
+## Bugs
+
+由于剔除了背景的数据集导致在没有树叶的时候错误识别，后续可以重新训练，目前的解决的方法是使用OpenCV HSV色彩空间进行筛选
 
 ## 许可证
 
